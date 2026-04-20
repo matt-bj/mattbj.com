@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">  
+<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Matt Bellringer Jones</title>
   <link rel="stylesheet" href="style.css">
@@ -9,12 +11,18 @@
 <body>
 
 <header>
+<div class="top-socials">
+  <a href="https://app.spotlight.com/2057-7835-5658" target="_blank"><i class="fa-solid fa-star"></i></a>
+  <a href="https://www.imdb.com/name/nm16629043/" target="_blank"><i class="fa-brands fa-imdb"></i></a>
+  <a href="https://www.youtube.com/@mattbj" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+  <a href="https://www.instagram.com/bellringerjones" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+</div>
   <h1>Matt Bellringer Jones</h1>
   <p class="tag">Character actor — grounded intensity, authority, and dark comedic edge</p>
 </header>
 
 <section class="hero">
-  <img src="images/headshot.jpg" alt="Matt Bellringer Jones headshot">
+  <img id="mainDisplay" src="images/headshot.jpg" alt="Matt Bellringer Jones headshot">
 </section>
 
 <section class="info">
@@ -30,12 +38,27 @@
 
 <section class="stills">
   <h2>Stills</h2>
-  <img src="images/alt.jpg" alt="Alternate headshot">
+
+  <!-- Thumbnail row -->
+  <div class="thumb-row">
+    <img src="images/headshot.jpg" onclick="swapImage(this)">
+    <img src="images/alt.jpg" onclick="swapImage(this)">
+    <img src="images/headshot2.jpg" onclick="swapImage(this)">
+    <img src="images/fullbody.jpg" onclick="swapImage(this)">
+    <img src="images/costume1.jpg" class="crop-thumb" onclick="swapImage(this)">
+    <img src="images/costume2.jpg" onclick="swapImage(this)">
+      </div>
 </section>
 
 <footer>
   <p>Contact via Spotlight or Instagram</p>
 </footer>
+
+<script>
+function swapImage(img) {
+  document.getElementById("mainDisplay").src = img.src;
+}
+</script>
 
 </body>
 </html>
