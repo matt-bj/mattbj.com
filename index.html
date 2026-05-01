@@ -22,7 +22,13 @@
 </header>
 
 <section class="hero">
+  <div class="main-wrapper">
+  <button class="nav prev" onclick="prevImage()">‹</button>
+
   <img id="mainDisplay" src="images/headshot.jpg" alt="Matt Bellringer Jones headshot">
+
+  <button class="nav next" onclick="nextImage()">›</button>
+</div>
 </section>
 
 <section class="info">
@@ -50,13 +56,50 @@
       </div>
 </section>
 
+<section class="contact">
+  <h2>Contact</h2>
+
+ <form action="https://formspree.io/f/xaqvyvzr" method="POST">
+
+    <input type="hidden" name="_subject" value="New message from mattbj.com">
+    <input type="text" name="_gotcha" style="display:none">
+
+    <input type="text" name="name" placeholder="Name" required>
+
+    <input type="email" name="email" placeholder="Email" required>
+
+    <textarea name="message" placeholder="Message" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+</section>
+
 <footer>
   <p>Contact via Spotlight or Instagram</p>
 </footer>
 
 <script>
+const images = Array.from(document.querySelectorAll(".thumb-row img")).map(img => img.src);
+
+let currentIndex = 0;
+
+function showImage(index) {
+  const main = document.getElementById("mainDisplay");
+  currentIndex = (index + images.length) % images.length;
+  main.src = images[currentIndex];
+}
+
 function swapImage(img) {
-  document.getElementById("mainDisplay").src = img.src;
+  const index = images.indexOf(img.src);
+  showImage(index);
+}
+
+function nextImage() {
+  showImage(currentIndex + 1);
+}
+
+function prevImage() {
+  showImage(currentIndex - 1);
 }
 </script>
 

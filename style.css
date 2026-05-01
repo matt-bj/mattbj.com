@@ -178,3 +178,79 @@ footer {
   object-fit: cover;
   object-position: center;
 }
+
+.main-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.main-wrapper img {
+  display: block;
+  margin: 0 auto;
+  max-width: 500px;
+  width: 100%;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  color: #fff;
+  border: none;
+  font-size: 2em;
+  padding: 5px 10px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.main-wrapper:hover .nav {
+  opacity: 1;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.contact {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  background: #1a1024;
+  border: 1px solid #555;
+  color: #ddd;
+  border-radius: 4px;
+}
+
+.contact textarea {
+  min-height: 120px;
+}
+
+.contact button {
+  padding: 10px 20px;
+  background: #3a2a5a;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.contact button:hover {
+  background: #4a3a6a;
+}
