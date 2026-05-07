@@ -267,3 +267,16 @@ footer {
   line-height: 1.5;
   color: #ccc;
 }
+
+.about {
+  max-width: 700px;
+  margin: 60px auto 20px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.about p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #aaa;
+}
