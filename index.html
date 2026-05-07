@@ -1,46 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matt Bellringer Jones | Actor | London</title>
+  <meta name="description" content="Matt Bellringer Jones is a London-based actor working across film, television and stage, with a grounded, offbeat and dark comedic range.">
 
-<title>Matt Bellringer Jones | Actor | London</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 
-<meta name="description" content="Matt Bellringer Jones is a London-based actor working across film, television and stage, with a grounded, offbeat and dark comedic range.">
-
-<link rel="stylesheet" href="style.css">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Matt Bellringer Jones",
-  "alternateName": ["Matt BJ"],
-  "url": "https://mattbj.com",
-  "jobTitle": "Actor",
-  "description": "London-based actor working across film, television and stage.",
-  "sameAs": [
-    "https://www.imdb.com/name/nm16629043/",
-    "https://app.spotlight.com/2057-7835-5658",
-    "https://www.instagram.com/bellringerjones",
-    "https://www.youtube.com/@mattbj"
-  ]
-}
-</script>
-
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Matt Bellringer Jones",
+    "alternateName": ["Matt BJ"],
+    "url": "https://mattbj.com",
+    "jobTitle": "Actor",
+    "description": "London-based actor working across film, television and stage.",
+    "sameAs": [
+      "https://www.imdb.com/name/nm16629043/",
+      "https://app.spotlight.com/2057-7835-5658",
+      "https://www.instagram.com/bellringerjones",
+      "https://www.youtube.com/@mattbj"
+    ]
+  }
+  </script>
 </head>
+
 <body>
 
 <header>
-<div class="top-socials">
-  <a href="https://app.spotlight.com/2057-7835-5658" target="_blank"><i class="fa-solid fa-star"></i></a>
-  <a href="https://www.imdb.com/name/nm16629043/" target="_blank"><i class="fa-brands fa-imdb"></i></a>
-  <a href="https://www.youtube.com/@mattbj" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-  <a href="https://www.instagram.com/bellringerjones" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-</div>
+  <div class="top-socials">
+    <a href="https://app.spotlight.com/2057-7835-5658" target="_blank"><i class="fa-solid fa-star"></i></a>
+    <a href="https://www.imdb.com/name/nm16629043/" target="_blank"><i class="fa-brands fa-imdb"></i></a>
+    <a href="https://www.youtube.com/@mattbj" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    <a href="https://www.instagram.com/bellringerjones" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+  </div>
+
   <h1>Matt Bellringer Jones</h1>
   <p class="tag">Character actor — grounded intensity, authority, and dark comedic edge</p>
 </header>
@@ -53,12 +52,12 @@
 
 <section class="hero">
   <div class="main-wrapper">
-  <button class="nav prev" onclick="prevImage()">‹</button>
+    <button class="nav prev" onclick="prevImage()">‹</button>
 
-  <img id="mainDisplay" src="images/headshot.jpg" alt="Matt Bellringer Jones headshot">
+    <img id="mainDisplay" src="images/headshot.jpg" alt="Matt Bellringer Jones actor headshot">
 
-  <button class="nav next" onclick="nextImage()">›</button>
-</div>
+    <button class="nav next" onclick="nextImage()">›</button>
+  </div>
 </section>
 
 <section class="info">
@@ -75,29 +74,25 @@
 <section class="stills">
   <h2>Stills</h2>
 
-  <!-- Thumbnail row -->
   <div class="thumb-row">
-    <img src="images/headshot.jpg" onclick="swapImage(this)">
-    <img src="images/alt.jpg" onclick="swapImage(this)">
-    <img src="images/headshot2.jpg" onclick="swapImage(this)">
-    <img src="images/fullbody.jpg" onclick="swapImage(this)">
-    <img src="images/costume1.jpg" class="crop-thumb" onclick="swapImage(this)">
-    <img src="images/costume2.jpg" onclick="swapImage(this)">
-      </div>
+    <img src="images/headshot.jpg" onclick="swapImage(this)" alt="Matt Bellringer Jones headshot">
+    <img src="images/alt.jpg" onclick="swapImage(this)" alt="Matt Bellringer Jones portrait">
+    <img src="images/headshot2.jpg" onclick="swapImage(this)" alt="Matt Bellringer Jones still">
+    <img src="images/fullbody.jpg" onclick="swapImage(this)" alt="Matt Bellringer Jones full body shot">
+    <img src="images/costume1.jpg" class="crop-thumb" onclick="swapImage(this)" alt="Matt Bellringer Jones in costume">
+    <img src="images/costume2.jpg" onclick="swapImage(this)" alt="Matt Bellringer Jones character still">
+  </div>
 </section>
 
 <section class="contact">
   <h2>Contact</h2>
 
- <form action="https://formspree.io/f/xaqvyvzr" method="POST">
-
+  <form action="https://formspree.io/f/xaqvyvzr" method="POST">
     <input type="hidden" name="_subject" value="New message from mattbj.com">
     <input type="text" name="_gotcha" style="display:none">
 
     <input type="text" name="name" placeholder="Name" required>
-
     <input type="email" name="email" placeholder="Email" required>
-
     <textarea name="message" placeholder="Message" required></textarea>
 
     <button type="submit">Send</button>

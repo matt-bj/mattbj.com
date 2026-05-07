@@ -254,3 +254,16 @@ footer {
 .contact button:hover {
   background: #4a3a6a;
 }
+
+.about {
+  max-width: 700px;
+  margin: 20px auto 10px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.about p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #ccc;
+}
