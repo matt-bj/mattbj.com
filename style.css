@@ -280,3 +280,9 @@ footer {
   line-height: 1.5;
   color: #aaa;
 }
+
+.rep {
+  font-size: 0.95em;
+  color: #bbb;
+  margin-top: 10px;
+}
