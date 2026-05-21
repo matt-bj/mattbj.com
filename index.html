@@ -40,18 +40,38 @@
   </div>
 
   <h1>Matt Bellringer Jones</h1>
-<p class="tag">Character actor — grounded intensity, authority, and dark comedic edge</p>
 
-<p class="rep">
-  Rep: Elite Creative Casting — 07576977103 — welcome@elitecreativecasting.co.uk
-</p>
+  <p class="tag">
+    Character actor — grounded intensity, authority, and dark comedic edge
+  </p>
+
+  <p class="rep">
+    Rep: Elite Creative Casting — 07576977103 — welcome@elitecreativecasting.co.uk
+  </p>
 </header>
 
 <section class="hero">
-  <div class="main-wrapper">
-    <button class="nav prev" onclick="prevImage()">‹</button>
-    <img id="mainDisplay" src="images/headshot.jpg" alt="Matt Bellringer Jones actor headshot">
-    <button class="nav next" onclick="nextImage()">›</button>
+  <div class="gallery-wrapper">
+
+    <div class="thumb-row">
+      <img src="images/headshot.jpg" onclick="swapImage(this)" alt="Headshot">
+      <img src="images/alt.jpg" onclick="swapImage(this)" alt="Portrait">
+      <img src="images/headshot2.jpg" onclick="swapImage(this)" alt="Still">
+      <img src="images/fullbody.jpg" class="crop-thumb" onclick="swapImage(this)" alt="Full body">
+      <img src="images/costume1.jpg" class="crop-thumb" onclick="swapImage(this)" alt="Costume">
+      <img src="images/costume2.jpg" onclick="swapImage(this)" alt="Character">
+    </div>
+
+    <div class="main-wrapper">
+      <button class="nav prev" onclick="prevImage()">‹</button>
+
+      <img id="mainDisplay"
+           src="images/headshot.jpg"
+           alt="Matt Bellringer Jones actor headshot">
+
+      <button class="nav next" onclick="nextImage()">›</button>
+    </div>
+
   </div>
 </section>
 
@@ -63,18 +83,6 @@
     <a href="https://app.spotlight.com/2057-7835-5658" target="_blank">Spotlight</a>
     <a href="https://www.instagram.com/bellringerjones" target="_blank">Instagram</a>
     <a href="https://www.youtube.com/@mattbj" target="_blank">YouTube</a>
-  </div>
-</section>
-
-<section class="stills">
-  <h2>Stills</h2>
-  <div class="thumb-row">
-    <img src="images/headshot.jpg" onclick="swapImage(this)" alt="Headshot">
-    <img src="images/alt.jpg" onclick="swapImage(this)" alt="Portrait">
-    <img src="images/headshot2.jpg" onclick="swapImage(this)" alt="Still">
-    <img src="images/fullbody.jpg" onclick="swapImage(this)" alt="Full body">
-    <img src="images/costume1.jpg" onclick="swapImage(this)" alt="Costume">
-    <img src="images/costume2.jpg" onclick="swapImage(this)" alt="Character">
   </div>
 </section>
 
@@ -95,7 +103,11 @@
 
 <section class="about">
   <p>
-    Matt Bellringer Jones (also credited and searched as <a href="/matt-bj.html">Matt BJ</a>) is a London-based actor working across film, television and stage, with a grounded screen presence and range into heightened, offbeat and dark comedic roles.
+    Matt Bellringer Jones (also credited and searched as
+    <a href="/matt-bj.html">Matt BJ</a>)
+    is a London-based actor working across film, television and stage,
+    with a grounded screen presence and range into heightened,
+    offbeat and dark comedic roles.
   </p>
 </section>
 
@@ -104,13 +116,17 @@
 </footer>
 
 <script>
-const images = Array.from(document.querySelectorAll(".thumb-row img")).map(img => img.src);
+const images = Array.from(
+  document.querySelectorAll(".thumb-row img")
+).map(img => img.src);
 
 let currentIndex = 0;
 
 function showImage(index) {
   const main = document.getElementById("mainDisplay");
+
   currentIndex = (index + images.length) % images.length;
+
   main.src = images[currentIndex];
 }
 
