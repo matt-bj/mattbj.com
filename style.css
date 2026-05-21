@@ -64,18 +64,15 @@ h1 {
 
 .thumb-row img {
   width: 80px;
-  height: auto;
+  height: 80px;
   display: block;
+
+  object-fit: cover;
+  object-position: center top;
+
   cursor: pointer;
   border-radius: 4px;
   border: 1px solid #555;
-}
-
-.crop-thumb {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  object-position: center;
 }
 
 .main-wrapper {
